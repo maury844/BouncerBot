@@ -27,7 +27,7 @@ async def on_voice_state_update(member, before, after):
     destination = after.channel.name if after.channel is not None else 'Disconnected'
 
     if source != destination:
-        await channel.send(f'/tts {name} moved from {source} to {destination}')
+        await channel.send(f'{name} moved from {source} to {destination}', tts=True)
     else:
         # The action was a change in mute/deafen status
         pass
