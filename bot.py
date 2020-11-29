@@ -22,12 +22,12 @@ async def on_voice_state_update(member, before, after):
             lambda chnl: chnl.name == 'bot', guild.channels)
         break
 
-    name = member.nick
+    name = member.display_name
     source = before.channel.name if before.channel is not None else 'Disconnected'
     destination = after.channel.name if after.channel is not None else 'Disconnected'
 
     if source != destination:
-        await channel.send(f'{name} moved from {source} to {destination}')
+        await channel.send(f'/tts {name} moved from {source} to {destination}')
     else:
         # The action was a change in mute/deafen status
         pass
