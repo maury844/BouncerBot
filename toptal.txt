@@ -1,0 +1,29 @@
+return x*3
+return '' + x
+return Math.trunc(x)
+return x%2==1
+return Math.sqrt(x)
+return parseFloat((6*x*x).toFixed(4))
+
+return x.filter((e,i) => i > 2)
+return x.every(c => c in ''
+return (/^[aeiouAEIOU]*$/i).test(x);
+
+return x.indexOf('.') == -1? "" : x.split('.').pop()
+
+x.filter((c,i) => i % 2 == 0)
+
+return parseFloat((4/3*x*x*x*Math.PI).toFixed(4))
+
+let str = '';
+for(let c of x) {
+ 
+let cCode = c.charCodeAt(0);
+str += cCode > 96? String.fromCharCode(cCode - 32) : String.fromCharCode(cCode + 32);
+}
+
+return str;
+
+return x.flat(1000)
+
+balancePoint
